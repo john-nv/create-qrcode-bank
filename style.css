@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 5vh;
+    background-color: #ebeded;
+}
+
+#qrImageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#qrImageContainer img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#overlayImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.19, 0.19);
+    opacity: 1;
+    z-index: 1;
+}
+
+.info_bank {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info_bank {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;     /* Căn chỉnh các dòng con theo chiều ngang */
+    height: 100%;           
+}
+
+.info_bank>div>i {
+    width: 35px;
+    text-align: center;
+}
+
+.input,
+.input:focus,
+.input:active,
+.input::placeholder {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+    color: black;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.button,
+.button:focus,
+.button:active,
+.button::placeholder {
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 5px;
+    /* border: 1px solid rgb(227, 227, 227);
+    padding: 3px 5px 3px 5px; */
+    font-size: 14px;
+    font-weight: 600;
+    color: #673AB7;
+    text-transform: uppercase;
+}
+
+.button:active {
+    background: #673AB7;
+    color: white;
+}
